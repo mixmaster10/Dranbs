@@ -1,0 +1,48 @@
+.box {
+    border-radius: 0;
+    padding: .75rem;
+}
+
+.head {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.image {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.upload, .button, .save {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    padding: 5px 18px;
+}
+
+.button, .save {
+    border: unset;
+    background: transparent;
+    color: #FA9805;
+}
+
+.upload {
+    color: white;
+    background: #939393;
+    border-radius: 10px;
+
+    &:hover {
+        background: black;
+    }
+}
+
+.button {
+
+}
+
+.save {
+    font-weight: bold;
+}

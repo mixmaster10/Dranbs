@@ -1,0 +1,26 @@
+@import '~pretty-checkbox/src/pretty-checkbox.scss';
+@import "~react-datepicker/dist/react-datepicker.css";
+@import "general.module";
+@import "editable.module";
+
+.react-datepicker__header {
+    padding-top: 0;
+    background-color: white;
+}
+
+.react-datepicker__navigation {
+    top: 20px;
+}
+
+.react-datepicker__current-month {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-family: Poppins, serif;
+    color: #223263;
+}
+
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+    width: 2.6rem;
+}

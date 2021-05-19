@@ -1,0 +1,426 @@
+html, body {
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-menu {
+    align-items: center;
+}
+
+.navbar-menu .navbar-start .navbar-item {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &.is-active {
+        border-bottom: 1px solid black;
+    }
+}
+
+.navbar-menu .navbar-end {
+    .input {
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 0;
+        border: unset;
+        box-shadow: unset;
+        border-bottom: 1px solid black;
+    }
+
+    .control .icon {
+        color: #dadada;
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar-item {
+        font-size: 14px;
+
+        .fa, .fas, img {
+            display: inline-block;
+            margin-right: 4px;
+
+            &.fa-heart {
+                color: #FF3366;
+            }
+        }
+    }
+
+    .navbar-dropdown {
+        border-top: unset;
+        background-color: #f7f7f7;
+        border-radius: 0;
+    }
+}
+
+header {
+    padding: 10px 80px;
+}
+
+.filter {
+    padding: 24px 80px;
+    margin-bottom: 8px;
+
+    .filter-item {
+        font-size: 12px;
+        margin-left: 12px;
+        margin-right: 12px;
+        text-align: center;
+
+        a {
+            padding: 6px 25px;
+            color: #9E9E9E;
+            white-space: nowrap;
+
+            &.is-active {
+                border-bottom: solid 1px black;
+                color: black;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .filter .filter-item {
+        width: 85%;
+    }
+}
+
+.board-breadcrumb {
+    padding: 24px 80px;
+    margin-bottom: 8px;
+
+    h3 {
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    p {
+        transition: all 2s linear;
+        display: block;
+    }
+
+    ul > li {
+        color: #939393;
+        font-size: 14px;
+        line-height: 34px;
+        font-weight: 400;
+        display: inline-block;
+
+        a {
+            color: #939393;
+        }
+
+        &:after {
+            content: "/";
+            display: inline-block;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+
+        &.is-active {
+            font-size: 30px;
+            line-height: 34px;
+            font-weight: 400;
+            color: black;
+            display: block;
+
+            a {
+                color: black;
+            }
+
+            &:after {
+                content: unset;
+            }
+        }
+    }
+
+    .follow-piece {
+        margin-top: 22px;
+
+        .follow, .unfollow {
+            width: 157px;
+            height: 35px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .follow {
+            background: black;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .unfollow {
+            background: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .followers {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            color: black;
+        }
+
+        button {
+            border: unset;
+            background: unset;
+            cursor: pointer;
+        }
+
+        > * {
+            margin-right: 50px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.brand {
+    font-size: 55px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    transition: all 2s linear;
+    display: block;
+    cursor: pointer;
+
+    small {
+        font-size: 14px;
+        font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+}
+
+.sticky-active {
+    header {
+        background-color: white;
+    }
+
+    .brand {
+        display: none;
+        opacity: 0;
+    }
+
+    .filter {
+        background-color: #f7f7f7;
+        padding: 12px 80px;
+    }
+
+    .board-breadcrumb {
+        display: flex;
+        align-items: center;
+        background-color: #f7f7f7;
+        padding: 12px 80px;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                line-height: 22px;
+                font-size: 14px;
+
+                &.is-active {
+                    font-size: 20px;
+                    width: auto;
+                    max-width: 320px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 22px;
+        }
+
+        p {
+            display: none;
+            opacity: 0;
+        }
+
+        .follow-piece {
+            margin-top: 0;
+            margin-left: 50px;
+        }
+
+        .follow, .unfollow {
+            height: 30px;
+            width: 135px;
+        }
+    }
+
+    .profile-heading {
+        background-color: white;
+        padding: 8px 80px;
+    }
+
+    .hidden-sticky-active {
+        display: none !important;
+    }
+}
+
+.profile-heading {
+    font-size: 30px;
+    color: black;
+    padding: 24px 80px;
+}
+
+.modal {
+    z-index: 1501;
+}
+
+.create-theme {
+    background: white;
+}
+
+.create-theme-head {
+    padding: 14px 20px;
+    border-bottom: 1px solid #DAD8D8;
+
+    p {
+        line-height: 24px;
+    }
+
+    button {
+        float: right;
+        border: unset;
+        background: transparent;
+        cursor: pointer;
+        font-size: 22px;
+        line-height: 16px;
+    }
+}
+
+.create-theme-body {
+    max-height: 395px;
+    overflow-y: auto;
+    padding: 10px 20px;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: black;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: black;
+    }
+
+    .board-list {
+        .saved {
+            color: #FA9805;
+            position: absolute;
+            right: 14px;
+            font-size: 12px;
+        }
+
+        .is-checkradio[type=checkbox] {
+            & + label {
+                padding-left: 24px;
+                color: black;
+
+                &:before {
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 0;
+                    border: solid 1px black;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            &:checked + label:after {
+                background: #FA9805;
+                border: unset;
+                width: 14px;
+                height: 14px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.create-theme-foot {
+    border-top: solid 1px #DAD8D8;
+
+    .button.show-form {
+        display: block;
+        width: 100%;
+        border-radius: 0;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        height: auto;
+        border-top: 1px solid #DAD8D8;
+    }
+
+    form {
+        padding: 14px 20px;
+
+        .label {
+            font-size: 12px;
+            color: black;
+            font-weight: normal;
+            margin-bottom: 0;
+        }
+
+        .input {
+            padding: 5px 0;
+            box-shadow: unset;
+            border: unset;
+            border-radius: 0;
+            border-bottom: 1px solid #000000;
+        }
+
+        .create-board {
+            color: #FA9805;
+            font-weight: bold;
+            font-size: 16px;
+            border: unset;
+            padding: unset;
+        }
+    }
+}
+
+button.btn-no-border {
+    border: unset;
+    background: unset;
+    cursor: pointer;
+    color: #666565;
+}
+
+.navbar-item .new-count {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    font-size: 12px;
+    line-height: 18px;
+    color: #FA9805;
+    font-weight: 700;
+}

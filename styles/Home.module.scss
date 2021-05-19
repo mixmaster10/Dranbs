@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 66px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.button {
+    background-color: #4cdcac;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.afterRegister {
+    color: black;
+}
+
+@media (min-width: 769px) {
+    .afterRegister {
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .afterRegister {
+        margin-top: 30px;
+    }
+}

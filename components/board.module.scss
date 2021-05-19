@@ -1,0 +1,50 @@
+.name {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.creator {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #939393;
+    margin-bottom: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    strong {
+        font-weight: 400;
+        color: black;
+    }
+}
+
+.followers {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 22px;
+    color: black;
+    white-space: nowrap;
+}
+
+.board {
+    a {
+        position: relative;
+        padding-top: calc(132% + 10px);
+    }
+
+    img {
+        position: absolute;
+        top: calc(50% + 5px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        height: calc(100% - 10px);
+        width: 100%;
+        object-fit: cover;
+    }
+}
