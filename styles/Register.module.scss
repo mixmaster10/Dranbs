@@ -1,5 +1,5 @@
 .register {
-    padding-top: 30px;
+    padding-top: 150px;
     padding-bottom: 30px;
     width: 343px;
 
@@ -14,6 +14,15 @@
     span {
         z-index: 0 !important;
     }
+}
+@media (max-width: 769px) {
+    .register {
+        padding-top: 0;
+    }
+}
+
+.invalid_email {
+    margin-top: 150px;
 }
 
 .heading {
@@ -42,5 +51,66 @@
         text-decoration: none;
         color: #fa9805;
         font-weight: 700;
+    }
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
+
+    p {
+        font-size: 14px;
+        font-weight: bold;
+        color: #9098b1;
+    }
+
+    &:before {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #9098B1;
+        height: 1px;
+    }
+
+    &:after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #9098B1;
+        height: 1px;
+    }
+}
+
+.socialButton {
+    button {
+        border: 1px solid #EBF0FF;
+        //border-radius: 5px;
+        //padding: 16px;
+        //height: 57px;
+        font-weight: bold;
+        //font-size: 14px;
+        color: #9098b1;
+        position: relative;
+    }
+
+    span {
+        position: absolute;
+        //left: 25px;
+        left: 15px;
+    }
+}
+
+.heading {
+    padding-top: 60px;
+    padding-bottom: 45px;
+
+    h1 {
+        text-align: center;
+        font-family: Playfair Display, serif;
+        font-size: 55px;
+    }
+
+    p {
+        text-align: center;
     }
 }

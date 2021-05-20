@@ -6300,3 +6300,7 @@ div .socialmedia-widget:first-child {
 .landing-body .brand {
     line-height: 55px;
 }
+
+.landing-body-right {
+    background-color: #F7F7F7;
+}
