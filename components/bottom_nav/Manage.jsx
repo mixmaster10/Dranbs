@@ -8,7 +8,7 @@ import { setAuth, setSiteType } from "../../redux/actions";
 class Manage extends React.Component {
   handleLogout = async () => {
     this.props.setAuth(false)
-    await this.props.router.push('/login')
+    await this.props.router.push('/')
   }
 
   render() {
