@@ -95,7 +95,7 @@ class Login extends Component {
                     <div className="landing-body-right column is-one-thirds is-hidden-mobile">  
                         <div className="is-flex is-justify-content-center">
                             <div className={styles.login}>
-                                <h4 className={styles.title}>Welcome to DRANBS</h4>
+                                <h4 className={styles.heading}>Welcome to DRANBS</h4>
                                 <p className={styles.subTitle}>Sign in to continue</p>
                                 <div className={`field ${styles.socialButton}`}>
                                     <button className="button is-block is-fullwidth" ref={this.gRef}>
