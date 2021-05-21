@@ -167,7 +167,7 @@ class Register extends Component {
                                     { this.state.error && this.state.error.email? "" : <button className="button is-black is-block is-fullwidth">Sign Up</button> }
                                     </div>
                                     <div className="field">
-                                        <p className={styles.footer}>have an account?<Link href="/">Sign in</Link></p>
+                                        <p className={styles.footer}>have an account? <Link href="/">Sign in</Link></p>
                                     </div>
                                 </div>
                             </div>

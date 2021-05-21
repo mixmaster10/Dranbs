@@ -2,18 +2,6 @@
     margin-top: 40px;
 }
 
-@media (max-width: 769px) {
-    .pageBody {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .login {
-        padding-top: 0;
-    }
-}
-
-
 .login {
     padding-top: 150px;
     padding-bottom: 90px;
@@ -47,33 +35,9 @@
 }
 
 .input {
-    //input {
-    //    border-radius: 5px;
-    //    border: solid 1px #ebf0ff;
-    //    font-size: 12px;
-    //    padding: 13px 16px 13px 50px;
-    //    padding-left: 50px !important;
-    //    height: 48px;
-    //}
-    //
-    //span {
-    //    height: 48px !important;
-    //    width: 48px !important;
-    //}
-
     i {
         color: #9098b1;
     }
-}
-
-.button {
-    //button {
-    //    border-radius: 5px;
-    //    padding: 16px;
-    //    height: 57px;
-    //    font-weight: bold;
-    //    font-size: 14px;
-    //}
 }
 
 .divider {
@@ -148,10 +112,22 @@
         text-align: center;
     }
 }
+
 .heading {
     font-size: 16px;
     line-height: 24px;
     text-align: center;
     font-weight: 700;
     margin-bottom: 8px;
+}
+
+@media (max-width: 769px) {
+    .pageBody {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .login {
+        padding-top: 0;
+    }
 }

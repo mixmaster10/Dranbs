@@ -102,7 +102,7 @@ class Login extends Component {
                         <div className="is-flex is-justify-content-center">
                             <div className={styles.login}>
                                 <div className="is-hidden-mobile">
-                                    <h4 className={styles.title}>Welcome to DRANBS</h4>
+                                    <h4 className={styles.heading}>Welcome to DRANBS</h4>
                                     <p className={styles.subTitle}>Sign in to continue</p>
                                 </div>
                                 <div className={`field ${styles.socialButton}`}>

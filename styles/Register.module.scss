@@ -15,11 +15,6 @@
         z-index: 0 !important;
     }
 }
-@media (max-width: 769px) {
-    .register {
-        padding-top: 0;
-    }
-}
 
 .invalid_email {
     margin-top: 150px;
@@ -112,5 +107,11 @@
 
     p {
         text-align: center;
+    }
+}
+
+@media (max-width: 769px) {
+    .register {
+        padding-top: 0;
     }
 }
